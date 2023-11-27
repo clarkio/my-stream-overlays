@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./assets/styles.css" type="text/css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <!-- 
+        In order to start using an image instead of the hosted iframes I need a way to 
+        seamlessly inject alerts based on the current scene. For example showing the last 
+        5 alert blocks stacked on the starting soon scene.
+
+        I also need to resize and apply some css for scenes with images that don't fill the full
+        1920x1080 resolution (e.g the main scene/screen share scene)
+      -->
+      <!-- <img id="scene-image" src="" /> -->
+      <iframe
+        id="overlay-embed"
+        src=""
+        frameborder="0"
+        overflow="hidden"
+        scrolling="no"
+        seamless="seamless"
+        allow="autoplay"
+      ></iframe>
+    </div>
+  </body>
+</html>
